@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{color}
+\begin{document}
+
+\title{Word Processing}
+\author{My Name}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+This is the introduction.
+
+\section{Methods}
+
+\subsection{Font Effect}
+\label{sec1}
+The first part of the methods.
+\textit{words in italics}
+\textsl{words slanted}
+\textsc{words in smallcaps}
+\textbf{words in bold}
+\texttt{words in teletype}
+\textsf{sans serif words}
+\textrm{roman words}
+\underline{underlined words}
+
+\subsection{Font color}
+{\color{red}{22}}
+{\color{magenta}{speak now}}
+{\color{cyan}{1989}}
+
+
+\subsection{Font Size}
+normal size words
+{\tiny tiny words}
+{\scriptsize scriptsize words}
+{\footnotesize footnotesize words}
+{\small small words}
+{\large large words}
+{\Large Large words}
+{\LARGE LARGE words}
+{\huge huge words}
+
+\subsection{Paragraph Indent}
+LaTeX defaults to the first line of the first paragraph of each chapter, and the first line of subsequent paragraphs is indented. If you want the top frame of the paragraph, just add the 'noindent' command before the paragraph you want the top frame. \par
+\setlength{\parindent}{0pt}
+If you want all paragraphs to be top-lined globally, use the 'setlength{parindent}{0pt}' command at a certain position in the document, and all subsequent paragraphs will be top-lined.
+
+\subsection{List}
+\subsubsection{Enumerate and Itemize}
+\begin{enumerate}
+\item First thing
+\item Second thing
+\begin{itemize}
+\item A sub-thing
+\item Another sub-thing
+\end{itemize}
+\item Third thing
+\end{enumerate}
+\subsubsection{Change Flags}
+Flags for unordered list headers can be modified using square bracket arguments.
+\begin{itemize}
+\item[-] First thing
+\item[+] Second thing
+\begin{itemize}
+\item[Fish] A sub-thing
+\item[Plants] Another sub-thing
+\end{itemize}
+\item[Q] Third thing
+\end{itemize}
+
+\section{Results}
+Here are my results. Referring to section \ref{sec1} on page \pageref{sec1}
+
+\end{document}
